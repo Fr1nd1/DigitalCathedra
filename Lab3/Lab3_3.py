@@ -3,7 +3,7 @@ def count_letters(str_):
     str_ = str_.lower()
     list_of_count_letters = {}
 
-    for index, letter in enumerate(str_):
+    for letter in str_:
         if letter.isalpha():
             if letter in list_of_count_letters:
                 list_of_count_letters[letter] += 1
