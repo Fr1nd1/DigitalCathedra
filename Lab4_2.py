@@ -13,8 +13,7 @@ def task() -> None:
         data = [row for row in data_csv]
 
     with open(OUTPUT_FILENAME, "w", encoding='utf-8') as file_output:
-        data_json = json.dumps(data, indent=indent)
-        file_output.write(data_json)
+        json.dump(data, file_output, indent=indent)
 
 if __name__ == '__main__':
     # Нужно для проверки
